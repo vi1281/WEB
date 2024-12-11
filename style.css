@@ -1,43 +1,53 @@
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
     margin: 0;
+    padding: 0;
 }
-.registration-form {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.registration-form h2 {
-    text-align: center;
-}
-.form-group {
-    margin-bottom: 15px;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-.form-group input {
+
+body{
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+    height: 100%;
 }
-.submit-btn {
+
+header{
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: rgb(40, 40, 40);
     width: 100%;
-    padding: 10px;
-    background-color: #49584d;
-    border: none;
+    height: 100px;
     color: white;
-    cursor: pointer;
-    border-radius: 5px;
+   
+
 }
-.submit-btn:hover {
-    background-color: #313f34;
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    max-height: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    width: auto; 
+}
+
+.auth{
+    float: right;
+    margin: 10px;
+}
+.buttonAuth{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(5, 238, 5);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 30px;
 }

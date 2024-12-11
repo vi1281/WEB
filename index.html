@@ -3,33 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма реєстрації</title>
+    <title>Головна Сторінка Сайту</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFormAuth.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="Img/logo-big-green.png" title="Лого сайту" alt="Лого сайту">
+        </div>
+        <div>
+            <span>Електроний Кампус</span>
+        </div>
+        
+        <div class="button1"></div>
+        <div class="auth" >
+            <button class="buttonAuth" id="btn">Війти</button>
+        </div>
+    </header>
 
-<div class="registration-form">
-    <h2>Реєстрація</h2>
-    <form action="#" method="post">
-        <div class="form-group">
-            <label for="firstName">Ім'я</label>
-            <input type="text" id="firstName" name="firstName" required>
-        </div>
-        <div class="form-group">
-            <label for="lastName">Прізвище</label>
-            <input type="text" id="lastName" name="lastName" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Електронна пошта</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="password">Пароль</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button type="submit" class="submit-btn">Зареєструватися</button>
-    </form>
-</div>
+    <div class="registration-form" id="registrationForm"  style="display: none;">>
+        <h2>Реєстрація</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="firstName">Ім'я</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Прізвище</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Зареєструватися</button>
+        </form>
+    </div>
 
+    <script src="code.js"></script>
 </body>
 </html>
