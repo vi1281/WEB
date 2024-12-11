@@ -51,3 +51,14 @@ header{
     font-size: 18px;
     border-radius: 30px;
 }
+
+.btn2 {
+    height: 64px;
+    width: 64px;
+    background-image: url(/Img/free-icon-font-menu-burger-3917215\ \(2\).png) ;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
+    
+}
