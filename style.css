@@ -52,13 +52,20 @@ header{
     border-radius: 30px;
 }
 
-.btn2 {
+.btnMenu {
     height: 64px;
     width: 64px;
-    background-image: url(/Img/free-icon-font-menu-burger-3917215\ \(2\).png) ;
     margin: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: cover;
-    
+    border-radius: 15px;
+    background-color: rgb(5, 238, 5);
+    font-size: 18px;
+}
+ 
+.Menu {
+    display: flex;
+    border: 1px solid black;
+    width: 15vh;
+}
+.Menu h2{
+    text-align: center;
 }
