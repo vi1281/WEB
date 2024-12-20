@@ -20,3 +20,61 @@ header{
    
 
 }
+
+/* Общий контейнер для меню */
+.menu-container {
+    margin: 20px;
+    position: relative; 
+    display: inline-block;
+}
+
+/* Стили для кнопки */
+.menu-button {
+    background-color: #28a745; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Ховер эффект для кнопки */
+.menu-button:hover {
+    background-color: #218838; 
+}
+
+/* Стили для выпадающего окна */
+.menu-dropdown {
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    background-color: white; 
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    width: 200px; 
+}
+
+/* Список внутри выпадающего меню */
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Стили для элементов списка */
+.menu-item {
+    padding: 10px 20px;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Ховер эффект для элементов списка */
+.menu-item:hover {
+    background-color: #f8f9fa; /* Светло-серый фон при наведении */
+}
