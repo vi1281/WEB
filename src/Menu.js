@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 class Menu extends React.Component {
     constructor(props) {
@@ -18,7 +18,15 @@ class Menu extends React.Component {
 
     render() {
         const { isOpen } = this.state;
-        const pages = ['Профіль', 'Контакти', 'ІНП','Поточний контроль','Резульати Аттестацій','Сессія','Розклад']; // Список страниц (можно передать через props)
+        const pages = [
+            { name: 'Профіль', path: '/profile' },
+            // { name: 'Контакти', path: '/contacts' },
+            // { name: 'ІНП', path: '/inp' },
+            // { name: 'Поточний контроль', path: '/current-control' },
+            // { name: 'Резульати Аттестацій', path: '/results' },
+            // { name: 'Сессія', path: '/session' },
+            // { name: 'Розклад', path: '/schedule' },
+        ];
 
         return (
             <div className="menu-container">
@@ -26,15 +34,15 @@ class Menu extends React.Component {
                     Меню
                 </button>
                 {isOpen && ( // Условный рендеринг списка
-                    <div className="menu-dropdown">
-                        <ul className="menu-list">
-                            {pages.map((page, index) => (
-                                <li key={index} className="menu-item">
-                                    {page}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+                     <div className="menu-dropdown">
+                     <ul className="menu-list">
+                         {pages.map((page, index) => (
+                             <li key={index} className="menu-item">
+                                 <Link to={page.path}>{page.name}</Link>
+                             </li>
+                         ))}
+                     </ul>
+                 </div>
                 )}
             </div>
         );
