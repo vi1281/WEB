@@ -20,11 +20,11 @@ class Menu extends React.Component {
         const { isOpen } = this.state;
         const pages = [
             { name: 'Профіль', path: '/profile' },
-            // { name: 'Контакти', path: '/contacts' },
-            // { name: 'ІНП', path: '/inp' },
-            // { name: 'Поточний контроль', path: '/current-control' },
-            // { name: 'Резульати Аттестацій', path: '/results' },
-            // { name: 'Сессія', path: '/session' },
+            { name: 'Контакти', path: '/Contact' },
+            { name: 'ІНП', path: '/inp' },
+            { name: 'Поточний контроль', path: '/flowControl' },
+            { name: 'Резульати Аттестацій', path: '/atestation' },
+            { name: 'Сессія', path: '/session' },
             // { name: 'Розклад', path: '/schedule' },
         ];
 
