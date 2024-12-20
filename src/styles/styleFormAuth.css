@@ -1,13 +1,10 @@
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 .registration-form {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
     width: 300px;
     padding: 20px;
     border: 1px solid #a74646;
@@ -32,7 +29,7 @@ body {
 .submit-btn {
     width: 100%;
     padding: 10px;
-    background-color: #49584d;
+    background-color: rgba(0, 221, 63, 0.848);
     border: none;
     color: white;
     cursor: pointer;
