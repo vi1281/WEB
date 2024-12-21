@@ -1,9 +1,26 @@
 import React from 'react';
 
-class session extends React.Component {
-//   <h1>
-//     Нам пизда
-//   </h1>
+class Session extends React.Component {
+    constructor(props) {
+                super(props);
+                this.state = {
+                    isOpen: false, // Состояние для отслеживания открытости меню
+                };
+            }
+                toggleMenu = () => {
+        this.setState((prevState) => ({
+            isOpen: !prevState.isOpen, // Переключаем состояние
+        }));
+        
+            }
+            render() {
+       
+                return (
+                    <h1>
+                        session
+                    </h1>
+                );
+            }
 }
 
-export default session;
+export default Session;

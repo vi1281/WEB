@@ -10,8 +10,8 @@ body {
     display: flex;
      flex-direction: column; /* Позволяет разместить хедер и основной контент друг под другом  */
      justify-content: flex-start; /*Выравнивание контента по вертикали */
-     color: #555;
-     background-color: #b9b5b5;
+     color: #565656;
+     background-color: #636363;
 }
 
 /* Хедер */
@@ -20,7 +20,7 @@ header {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(56, 56, 56);
     width: 100%;
     height: 100px;
     color: white;
@@ -35,7 +35,6 @@ header {
     transform: translateX(-50%); /* Смещаем логотип на половину его ширины, чтобы точно выровнять по центру */
 
 }
-
 /* Меню */
 .menu-container {
     margin: 20px;
@@ -104,7 +103,6 @@ header {
 .menu-item:hover {
     background-color: #4b4b4b; 
 }
-
 /* Профиль */
 .profile {
     display: inline-block;
@@ -143,4 +141,7 @@ header {
     font-size: 18px;
     color: #555;
 }
+
+
+
 
