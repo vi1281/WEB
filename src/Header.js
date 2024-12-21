@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Menu from "./Menu"
 import Profile from './Profile'
+import Contact from './Contact'
 
 
 
@@ -14,6 +15,7 @@ class Header extends React.Component {
                 <Menu />
                 <Routes>
                     <Route path="/Profile" element={<Profile />} />
+                    <Route path="/Contact" element={<Contact />} />
                 </Routes>
             </div>
         </Router>
