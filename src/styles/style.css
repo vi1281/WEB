@@ -163,7 +163,7 @@ header {
     color: #333;
 }
 
-.contact {
+.contacts {
     display: flex;
     flex-direction: column;
     align-items: center;

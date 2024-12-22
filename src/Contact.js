@@ -39,7 +39,7 @@ class Contact extends React.Component {
     };
 
     return (
-      <div>
+      <div className ="Contact">
         <h1>Контакти викладачів кафедри ІТТ</h1>
 
         <h2>Штатні викладачі</h2>
