@@ -5,7 +5,7 @@ class FlowControl extends React.Component {
         return (
             <div className="FlowControl">
                 <h1>Поточний контроль</h1>
-                <table>
+                {/* <table>
                     <thead>
                         <tr>
                             <th>Дисципліна</th>
@@ -65,7 +65,7 @@ class FlowControl extends React.Component {
                             <td></td>
                         </tr>
                     </tbody>
-                </table>
+                </table> */}
             </div>
         );
     }
