@@ -9,13 +9,15 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     color: #565656;
     background-color: #2b2b2b;
-    overflow: auto;  
+    overflow: auto;
+    position: relative; 
+    margin: 0; 
+    
 }
 
-/* Хедер */
 header {
     position: sticky;
     top: 0;
@@ -27,22 +29,21 @@ header {
     width: 100%;
     height: 15vh;
     color: white;
+    
 }
-
 /* Блоки */
 .profile, .Contact, .Inp, .Session, .Atest, .FlowControl {
     width: 80vw;
 
-    position:fixed;
+    position: absolute;
     left: 10vw;
     margin-top: 5vh; 
     background-color: white;
     color: #333;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: auto;  
-    
-    height: 75vh; 
     border-radius: 10px;
+    
     
 }
 
@@ -51,9 +52,9 @@ header {
     font-family: "Agu Display", serif;
     font-size: 170%;
     color: #28a745;
-    position: absolute; /* Позиционируем логотип относительно хедера */
-    left: 50%; /* Отступ слева на 50% от ширины хедера */
-    transform: translateX(-50%); /* Смещаем логотип на половину его ширины, чтобы точно выровнять по центру */
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
 
 }
 /* Меню */
@@ -80,10 +81,10 @@ header {
 
 /* Меню: тепер закріплене в лівому верхньому куті */
 .menu-container {
-    position: sticky; /* Використовуємо fixed для фіксації меню */
-    top: 20px; /* Відстань від верхнього краю */
-    left: 20px; /* Відстань від лівого краю */
-    z-index: 1000; /* Вищий пріоритет, щоб меню було поверх інших елементів */
+    position: sticky;
+    top: 20px; 
+    left: 20px; 
+    z-index: 1000; 
 }
 
 .menu-dropdown {
