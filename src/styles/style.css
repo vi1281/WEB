@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     background-color: rgb(28, 28, 28);
     width: 100%;
-    height: 15vh;
+    height: 13vh;
     color: white;
     
 }
@@ -43,7 +43,14 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: auto;  
     border-radius: 10px;
+    padding: 2%;
     
+}
+.profile, .Contact, .Inp, .Session, .Atest, .FlowControl  h1{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+
     
 }
 
@@ -66,20 +73,19 @@ header {
 
 .menu-button {
     background-color: #28a745; 
-    color: #333; 
+    color: #f3f4f8; 
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    
 }
 
 .menu-button:hover {
     background-color: #218838; 
 }
 
-/* Меню: тепер закріплене в лівому верхньому куті */
 .menu-container {
     position: sticky;
     top: 20px; 
@@ -91,7 +97,7 @@ header {
     position: absolute;
     top: 65px; 
     left: 0;
-    background-color: white; /* Білий фон з прозорістю */
+    background-color: transparent; 
     backdrop-filter: blur(1.5px);
     border: 1px solid white; 
     border-radius: 5px;
@@ -107,14 +113,17 @@ header {
 }
 
 .menu-item {
-    display: block;  /* Делаем элементы блочными */
-    width: 100%;     /* Занимают всю доступную ширину */ 
+    display: block;  
+    width: 100%;     
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
     font-family: "EB Garamond", serif;
     font-style: normal;
-}
+    background-color: transparent; 
+    
+} 
+
 .menu-dropdown .menu-item a {
     color: #28a745 !important; 
     text-decoration: none;
@@ -122,14 +131,13 @@ header {
     width: 100%;   
     
 }
+
 .menu-item:hover {
-    background-color: #4b4b4b; 
+    background-color: #c8c8c8; 
 }
 
 
-.profileP,
-.profileN,
-.profileC {
+.profileP, .profileN, .profileC {
     width: 100%;
     background-color: white;
     margin-bottom: 20px;
@@ -139,9 +147,7 @@ header {
     color: #333;
 }
 
-.profileP h1,
-.profileN h1,
-.profileC h1 {
+.profileP h1, .profileN h1, .profileC h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
@@ -160,7 +166,7 @@ header {
 }
 
 h2 {
-    background-color: #f1f1f1;
+    background-color: #b7a4a4;
     padding: 10px;
     width: 100%;
     border-radius: 5px;
@@ -246,25 +252,3 @@ th, td {
     border-radius: 5px;
 }
 
-.Session h1 
- {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-
-.Atest h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-.FlowControl h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
