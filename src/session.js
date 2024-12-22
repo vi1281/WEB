@@ -27,7 +27,7 @@ class Session extends React.Component {
                 <table>
                     <thead>
                         <tr>
-                            <th>№ п/п</th>
+                            <th>№</th>
                             <th>Назва дисципліни</th>
                             <th>Тип іспиту</th>
                             <th>Дата і час</th>
