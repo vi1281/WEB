@@ -155,7 +155,7 @@ header {
     align-items: center;
     justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
     width: 50vw;
-    margin-top: 115%;
+    margin-top: 175%;
     margin-left: 100%;
     transform: translateX(-50%);
     width: 120%;
@@ -190,4 +190,26 @@ ul {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
+}
+/* Стиль для кожного елемента списку */
+li {
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Виділення імені */
+li strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Чередування кольорів для парних і непарних елементів */
+li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+li:nth-child(odd) {
+    background-color: #ececec;
 }
