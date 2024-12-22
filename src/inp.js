@@ -38,7 +38,7 @@ class Inp extends React.Component {
                 <table>
                     <thead>
                         <tr>
-                            <th>№ п/п</th>
+                            <th>№</th>
                             <th>Найменування кредитного модулю</th>
                             <th>Назва кафедри</th>
                             <th>Обсяг дисциплін</th>
