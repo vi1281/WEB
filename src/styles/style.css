@@ -228,7 +228,7 @@ li:nth-child(odd) {
     align-items: center;
     justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
     width: 50vw;
-    margin-top: 125%;
+    margin-top: 208%;
     margin-left: 100%;
     transform: translateX(-50%);
     background-color: white;
