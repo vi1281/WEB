@@ -1,36 +1,52 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Убедимся, что все элементы не будут выходить за пределы контейнера */
+    box-sizing: border-box; 
 }
 
 body {
     width: 100%;
     height: 100%;
     display: flex;
-     flex-direction: column; /* Позволяет разместить хедер и основной контент друг под другом  */
-     justify-content: flex-start; /*Выравнивание контента по вертикали */
-     color: #565656;
-     background-color: #2b2b2b;
-     overflow: hidden;
-     overflow: auto;
-     overflow: scroll;
+    flex-direction: column;
+    justify-content: flex-start; 
+    color: #565656;
+    background-color: #2b2b2b;
+    overflow: auto;  
 }
 
 /* Хедер */
 header {
     position: sticky;
-    display: flex;
     top: 0;
-    align-items: center; 
-    justify-content: space-between; 
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(28, 28, 28);
     width: 100%;
-    height: 100px;
+    height: 15vh;
     color: white;
-    z-index: 100;
-
 }
+
+/* Блоки */
+.profile, .Contact, .Inp, .Session, .Atest, .FlowControl {
+    width: 80vw;
+
+    position:fixed;
+    left: 10vw;
+    margin-top: 5vh; 
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;  
+    
+    height: 75vh; 
+    border-radius: 10px;
+    
+}
+
+
 .Logo {
     font-family: "Agu Display", serif;
     font-size: 170%;
@@ -64,7 +80,7 @@ header {
 
 /* Меню: тепер закріплене в лівому верхньому куті */
 .menu-container {
-    position: fixed; /* Використовуємо fixed для фіксації меню */
+    position: sticky; /* Використовуємо fixed для фіксації меню */
     top: 20px; /* Відстань від верхнього краю */
     left: 20px; /* Відстань від лівого краю */
     z-index: 1000; /* Вищий пріоритет, щоб меню було поверх інших елементів */
@@ -82,8 +98,6 @@ header {
     height: 50vh;
     color: #28a745;
 }
-
-
 
 .menu-list {
     list-style: none;
@@ -110,21 +124,8 @@ header {
 .menu-item:hover {
     background-color: #4b4b4b; 
 }
-/* Профиль */
-.profile {
-    display: inline-block;
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
-    width: 50vw;
-    margin-top: 75%;
-    margin-left: 100%;
-    transform: translateX(-50%);
-    
-}
-/* Разделы профиля */
+
+
 .profileP,
 .profileN,
 .profileC {
@@ -150,37 +151,13 @@ header {
     color: #555;
 }
 
-
-
-
-/* Контейнер для всіх контактів */
-.Contact {
-    display: inline-block;
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
-    width: 50vw;
-    margin-top: 175%;
-    margin-left: 100%;
-    transform: translateX(-50%);
-    width: 120%;
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    color: #333;
-}
-/* Заголовок для контейнера */
 .Contact h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
 }
-/* Стилі для кожної категорії */
+
 h2 {
     background-color: #f1f1f1;
     padding: 10px;
@@ -190,7 +167,7 @@ h2 {
     color: #333;
 }
 
-/* Стилі для списків */
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -198,7 +175,7 @@ ul {
     margin-bottom: 10px;
     width: 100%;
 }
-/* Стиль для кожного елемента списку */
+
 li {
     padding: 10px;
     background-color: #fafafa;
@@ -206,13 +183,13 @@ li {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Виділення імені */
+
 li strong {
     font-weight: bold;
     color: #333;
 }
 
-/* Чередування кольорів для парних і непарних елементів */
+
 li:nth-child(even) {
     background-color: #f9f9f9;
 }
@@ -222,27 +199,6 @@ li:nth-child(odd) {
 }
 
 
-/* Стиль для контейнера таблиці */
-.Inp {
-    display: inline-block;
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
-    width: 50vw;
-    margin-top: 208%;
-    margin-left: 100%;
-    transform: translateX(-50%);
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    color: #333;
-}
-
-/* Заголовок для контейнера */
 .Inp h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -250,14 +206,14 @@ li:nth-child(odd) {
     color: #333;
 }
 
-/* Стилі для таблиці */
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Стилі для заголовків таблиці */
+
 th {
     background-color: #f1f1f1;
     padding: 10px;
@@ -267,7 +223,7 @@ th {
     border: 1px solid #ddd;
 }
 
-/* Стилі для клітинок таблиці */
+
 td {
     padding: 10px;
     text-align: left;
@@ -275,7 +231,7 @@ td {
     border: 1px solid #ddd;
 }
 
-/* Чередування кольорів для парних і непарних рядків */
+
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
@@ -284,35 +240,11 @@ tr:nth-child(odd) {
     background-color: #ececec;
 }
 
-/* Виділення для заголовків стовпців */
+
 th, td {
     border-radius: 5px;
 }
 
-
-
-
-/* Стиль для контейнера таблиці */
-.Session {
-    display: inline-block;
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
-    width: 50vw;
-    margin-top: 115%;
-    margin-left: 100%;
-    transform: translateX(-50%);
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    color: #333;
-}
-
-/* Заголовок для контейнера */
 .Session h1 
  {
     text-align: center;
@@ -322,27 +254,6 @@ th, td {
 }
 
 
-
-.Atest {
-    display: inline-block;
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
-    width: 50vw;
-    margin-top: 107%;
-    margin-left: 100%;
-    transform: translateX(-50%);
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    color: #333;
-}
-
-/* Заголовок для контейнера */
 .Atest h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -350,29 +261,6 @@ th, td {
     color: #333;
 }
 
-
-
-
-.FlowControl {
-    display: inline-block;
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
-    width: 50vw;
-    margin-top: 107%;
-    margin-left: 100%;
-    transform: translateX(-50%);
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    color: #333;
-}
-
-/* Заголовок для контейнера */
 .FlowControl h1 {
     text-align: center;
     margin-bottom: 20px;

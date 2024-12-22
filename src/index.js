@@ -5,7 +5,8 @@ import './styles/style.css'
 
 
 const elements = (
-  <Header />
+  <div className='main-container'> <Header /></div>
+ 
 );
 
 const app = document.getElementById('campus');

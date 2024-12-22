@@ -14,11 +14,7 @@ class Atest extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Сенсорні мережі</td>
-                            <td>Лісовський К. С.</td>
-                            <td>a</td>
-                        </tr>
+                        
                         <tr>
                             <td>Передача голосу та відео ІР мережею (VоІР, ІРТV)</td>
                             <td>Астраханцев А. А.</td>
