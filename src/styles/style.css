@@ -146,6 +146,10 @@ header {
     font-size: 18px;
     color: #555;
 }
+
+
+
+
 /* Контейнер для всіх контактів */
 .Contact {
     display: inline-block;
@@ -213,3 +217,104 @@ li:nth-child(even) {
 li:nth-child(odd) {
     background-color: #ececec;
 }
+
+
+/* Стиль для контейнера таблиці */
+.Inp {
+    display: inline-block;
+    display: flex;
+    position: relative; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
+    width: 50vw;
+    margin-top: 125%;
+    margin-left: 100%;
+    transform: translateX(-50%);
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Заголовок для контейнера */
+.Inp h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Стилі для таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Стилі для заголовків таблиці */
+th {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Стилі для клітинок таблиці */
+td {
+    padding: 10px;
+    text-align: left;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+}
+
+/* Чередування кольорів для парних і непарних рядків */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ececec;
+}
+
+/* Виділення для заголовків стовпців */
+th, td {
+    border-radius: 5px;
+}
+
+
+
+
+/* Стиль для контейнера таблиці */
+.Session {
+    display: inline-block;
+    display: flex;
+    position: relative; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
+    width: 50vw;
+    margin-top: 115%;
+    margin-left: 100%;
+    transform: translateX(-50%);
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Заголовок для контейнера */
+.Session h1 
+ {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
