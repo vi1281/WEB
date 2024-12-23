@@ -21,12 +21,13 @@ export const loginUser = (email, password) => {
   return signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       const user = userCredential.user;
-      // Сохраняем email в localStorage
-      localStorage.setItem("userEmail", user.email);
+      // Сохраняем uid в localStorage
+      localStorage.setItem("userId", user.uid);  // Сохраняем uid
       return user;
     })
     .catch((error) => {
       throw new Error(error.message);
     });
 };
+
 
