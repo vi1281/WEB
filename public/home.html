@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <script>
+    // Check if user email is in localStorage
+    const email = localStorage.getItem("userEmail");
+
+    if (!email) {
+      // Redirect to login page if no email is found
+      window.location.href = "index.html";
+    } else {
+      // Display email
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("welcomeMessage").textContent = `Welcome, ${email}`;
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1 id="welcomeMessage">Welcome, User</h1>
+  <!-- Add your home page content here -->
+</body>
+</html>

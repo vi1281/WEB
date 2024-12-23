@@ -1,49 +1,21 @@
 <!DOCTYPE html>
-<html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firestore Users</title>
-  </head>
-  <body>
-    <h1>Додавання користувачів у Firestore</h1>
-
-    <!-- Форма для введення даних користувача -->
-    <form id="userForm">
-      <label for="userId">ID користувача:</label>
-      <input type="text" id="userId" required />
-
-      <label for="ПІБ">ПІБ:</label>
-      <input type="text" id="ПІБ" required />
-
-      <label for="Емейл">Емейл:</label>
-      <input type="email" id="Емейл" required />
-
-      <label for="Підрозділ">Підрозділ:</label>
-      <input type="text" id="Підрозділ" required />
-
-      <label for="Група">Група:</label>
-      <input type="text" id="Група" required />
-
-      <label for="Форма навчання">Форма навчання:</label>
-      <input type="text" id="Форма навчання" required />
-
-      <label for="Курс навчання">Курс навчання:</label>
-      <input type="number" id="Курс навчання" min="1" max="4" required />
-
-      <label for="Спеціальність">Спеціальність:</label>
-      <input type="text" id="Спеціальність" required />
-
-      <label for="Статус">Статус:</label>
-      <input type="text" id="Статус" required />
-
-      <button type="submit">Додати користувача</button>
-    </form>
-
-    <!-- Місце для повідомлень про успіх чи помилки -->
-    <div id="message"></div>
-
-    <!-- Подключаем внешний JS файл -->
-    <script type="module" src="/src/auth.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Login & Registration</title>
+  <script type="module" src="auth.js"></script>
+</head>
+<body>
+  <form id="authForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <br>
+    <button id="login" type="button">Login</button>
+    <button id="register" type="button">Register</button>
+  </form>
+</body>
 </html>
