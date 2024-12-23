@@ -163,14 +163,14 @@ header {
 
 .menu-dropdown {
     position: absolute;
-    top: 65px; 
+    top: 75px; 
     left: 0;
     background-color: white; 
     backdrop-filter: blur(1.5px);
     border: 1px solid white; 
     border-radius: 5px;
     width: 200px; 
-    height: 50vh;
+    height: 45vh;
     color: #28a745;
 }
 
@@ -213,6 +213,7 @@ header {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease; /* Анімація для hover */
+    margin-top: 20px;
 }
 
 .logout-button:hover {
