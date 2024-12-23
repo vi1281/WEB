@@ -33,10 +33,9 @@ header {
 }
 /* Блоки */
 .profile, .Contact, .Inp, .Session, .Atest, .FlowControl {
-    width: 80vw;
-
+    width: 1000px;
     position: absolute;
-    left: 10vw;
+    left: 20vw;
     margin-top: 5vh; 
     background-color: white;
     color: #333;
