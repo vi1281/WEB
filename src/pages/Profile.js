@@ -44,6 +44,10 @@ class Profile extends React.Component {
                 console.error("Ошибка при получении данных:", error);
             });
     }
+    handleLogout = () => {
+        localStorage.removeItem("userId"); // Удаляем userId из localStorage
+        window.location.href = "/login"; // Перенаправляем пользователя на страницу логина
+    };
 
     render() {
         const { name, department, group, formOfStudy, course, specialty, status, contact } = this.state.personalInfo;
@@ -66,6 +70,7 @@ class Profile extends React.Component {
                 <div className="profileC">
                     <h1>Контактні данні</h1>
                     <h3>Контакт: {contact || ""}</h3>
+                    <button onClick={this.handleLogout} className="logout-button">Вийти</button>
                 </div>
             </div>
         );
