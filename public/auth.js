@@ -37,7 +37,7 @@ loginButton.addEventListener("click", function (event) {
       // Save email to localStorage for home page
       localStorage.setItem("userEmail", user.email);
       // Redirect to home page
-      window.location.href = "home.html";
+      window.location.href = "campus.html";
     })
     .catch((error) => {
       alert(`Error: ${error.message}`);
