@@ -53,8 +53,77 @@ header {
 
     
 }
+/* Кнопка входу */
+.auth-container {
+    margin: 2vw;
+    position: relative;
+    display: inline-block;
+}
 
+.authBtn {
+    background-color: #28a745; 
+    color: #f3f4f8; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.authBtn:hover {
+    background-color: #218838;
+}
+.auth {
+   position: absolute;
+   top: 20vh;
+   right: 50vw;
+   transform: translateX(50%); 
+   background-color: rgb(170, 170, 170);
+   border: none;
+   
+   width: 30vw;
+   height: 50vh;
+   
+   border-radius: 30px;
 
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.auth h1{
+    margin-left: 55%;
+    transform: translateX(-50%); 
+}
+.auth form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth label {
+    margin-left: 50%;
+    font-size: 14px;
+    color: #333;
+}
+
+.auth input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.auth button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.auth button:hover {
+    background-color: #218838;
+}
+/* Лого */
 .Logo {
     font-family: "Agu Display", serif;
     font-size: 170%;
@@ -66,7 +135,7 @@ header {
 }
 /* Меню */
 .menu-container {
-    margin: 20px;
+    margin: 2vw;
     position: relative; 
     display: inline-block;
 }

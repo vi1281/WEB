@@ -19,7 +19,6 @@ class Menu extends React.Component {
     render() {
         const { isOpen } = this.state;
         const pages = [
-            { name: 'Профіль', path: '/profile' },
             { name: 'Контакти', path: '/Contact' },
             { name: 'ІНП', path: '/inp' },
             { name: 'Поточний контроль', path: '/flowControl' },
