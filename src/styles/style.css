@@ -97,7 +97,7 @@ header {
     position: absolute;
     top: 65px; 
     left: 0;
-    background-color: transparent; 
+    background-color: white; 
     backdrop-filter: blur(1.5px);
     border: 1px solid white; 
     border-radius: 5px;
@@ -120,7 +120,7 @@ header {
     cursor: pointer;
     font-family: "EB Garamond", serif;
     font-style: normal;
-    background-color: transparent; 
+    /* background-color: white;  */
     
 } 
 
