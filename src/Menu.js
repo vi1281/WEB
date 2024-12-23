@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +6,16 @@ class Menu extends React.Component {
         super(props);
         this.state = {
             isOpen: false, // Состояние для отслеживания открытости меню
+            isAuthenticated: false, // Состояние для отслеживания авторизации
         };
+    }
+
+    componentDidMount() {
+        // Проверяем, авторизован ли пользователь, по данным из localStorage
+        const userId = localStorage.getItem("userId");
+        if (userId) {
+            this.setState({ isAuthenticated: true });
+        }
     }
 
     toggleMenu = () => {
@@ -17,7 +25,13 @@ class Menu extends React.Component {
     };
 
     render() {
-        const { isOpen } = this.state;
+        const { isOpen, isAuthenticated } = this.state;
+
+        // Если пользователь не авторизован, скрываем меню
+        if (!isAuthenticated) {
+            return null; // Меню не будет отображаться
+        }
+
         const pages = [
             { name: 'Контакти', path: '/Contact' },
             { name: 'ІНП', path: '/inp' },
@@ -33,15 +47,15 @@ class Menu extends React.Component {
                     Меню
                 </button>
                 {isOpen && ( // Условный рендеринг списка
-                     <div className="menu-dropdown">
-                     <ul className="menu-list">
-                         {pages.map((page, index) => (
-                             <li key={index} className="menu-item">
-                                 <Link to={page.path}>{page.name}</Link>
-                             </li>
-                         ))}
-                     </ul>
-                 </div>
+                    <div className="menu-dropdown">
+                        <ul className="menu-list">
+                            {pages.map((page, index) => (
+                                <li key={index} className="menu-item">
+                                    <Link to={page.path}>{page.name}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 )}
             </div>
         );
