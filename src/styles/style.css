@@ -163,14 +163,14 @@ header {
 
 .menu-dropdown {
     position: absolute;
-    top: 65px; 
+    top: 75px; 
     left: 0;
     background-color: white; 
     backdrop-filter: blur(1.5px);
     border: 1px solid white; 
     border-radius: 5px;
     width: 200px; 
-    height: 50vh;
+    height: 45vh;
     color: #28a745;
 }
 
@@ -202,6 +202,22 @@ header {
 
 .menu-item:hover {
     background-color: #c8c8c8; 
+}
+
+.logout-button {
+    background-color: #28a745; 
+    color: #f3f4f8; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Анімація для hover */
+    margin-top: 20px;
+}
+
+.logout-button:hover {
+    background-color: #218838; /* Темніший червоний для hover */
 }
 
 
