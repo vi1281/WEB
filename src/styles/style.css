@@ -204,6 +204,21 @@ header {
     background-color: #c8c8c8; 
 }
 
+.logout-button {
+    background-color: #28a745; 
+    color: #f3f4f8; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Анімація для hover */
+}
+
+.logout-button:hover {
+    background-color: #218838; /* Темніший червоний для hover */
+}
+
 
 .profileP, .profileN, .profileC {
     width: 100%;
