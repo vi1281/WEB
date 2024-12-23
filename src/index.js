@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom'; 
-import Header from "./Header"
-import './styles/style.css'
+// import React from 'react';
+// import ReactDOM from 'react-dom'; 
+// import App from './authP/app'
 
 
-const elements = (
-  <div className='main-container'> <Header /></div>
+
+// const elements = (
+//   <div className='main-container'> 
+
+
+//   <App />
+//   </div>
  
-);
+// );
 
-const app = document.getElementById('campus');
-const root = ReactDOM.createRoot(app);  
-root.render(elements, app);  // Рендерим элементы в div с id "campus"
+// const app = document.getElementById('campus');
+// const root = ReactDOM.createRoot(app);  
+// root.render(elements, app);  

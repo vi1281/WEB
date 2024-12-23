@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Menu from "./Menu"
+import Menu from "../Menu"
 import Profile from './Profile'
 import Contact from './Contact'
 import Atest from './atestation'

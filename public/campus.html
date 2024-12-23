@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <title>Campus</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="campus"></div> 
+    <script src="/src/index.js"></script>
+  </body>
+  <!-- <main>
+    <section>
+      <h2>Ласкаво просимо!</h2>
+      <p>Не важливо, чи ви шукаєте контакти викладачів, хочете перевірити результати атестацій, чи просто дізнатися розклад — усе це доступно тут, у зручному форматі.</p>
+      <p>Електронний кампус допоможе зробити ваше студентське життя простішим і приємнішим!</p>
+    </section>
+    <form id="registerForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <br>
+      <button id="submit" type="button">Register</button>
+    </form>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js";
+      
+      const firebaseConfig = {
+    apiKey: "AIzaSyDRhYwxR2O1zeQFZQf_A70Jf4zNESlBfPc",
+    authDomain: "dbase-a9d5a.firebaseapp.com",
+    projectId: "dbase-a9d5a",
+    storageBucket: "dbase-a9d5a.firebasestorage.app",
+    messagingSenderId: "16367447538",
+    appId: "1:16367447538:web:0eb42e275dbb4d2860cf6b"
+      };
+  
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+  
+      const submit = document.getElementById('submit');
+      submit.addEventListener("click", function (event) {
+        event.preventDefault();
+  
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value.trim();
+  
+        if (!email || !password) {
+          alert("Please enter both email and password.");
+          return;
+        }
+  
+        createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            alert("User registered successfully!");
+          })
+          .catch((error) =>s {
+            alert(`Error: ${error.message}`);
+          });
+      });
+    </script>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Електронний кампус. Зроблено з турботою про студентів.</p>
+  </footer> -->
+</html>
