@@ -25,17 +25,12 @@ class Menu extends React.Component {
     };
 
     render() {
-        const { isOpen, isAuthenticated } = this.state;
-
-        // Если пользователь не авторизован, скрываем меню
-        if (!isAuthenticated) {
-            return null; // Меню не будет отображаться
-        }
+        const { isOpen } = this.state; // Деструктурируем isOpen из состояния
 
         const pages = [
             { name: 'Контакти', path: '/Contact' },
             { name: 'ІНП', path: '/inp' },
-            { name: 'Поточний контроль', path: '/flowControl' },
+            // { name: 'Поточний контроль', path: '/flowControl' },
             { name: 'Резульати Аттестацій', path: '/atestation' },
             { name: 'Сессія', path: '/session' },
             // { name: 'Розклад', path: '/schedule' },

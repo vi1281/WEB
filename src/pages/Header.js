@@ -21,7 +21,7 @@ class Header extends React.Component {
                 <Menu />
                 <Routes>
                     <Route path="/Contact" element={<Contact />} />
-                    <Route path="/flowControl" element={<FlowControl />} />
+                    {/* <Route path="/flowControl" element={<FlowControl />} /> */}
                     <Route path="/atestation" element={<Atest />} />
                     <Route path="/session" element={<Session />} />
                     <Route path="/inp" element={<Inp />} />
