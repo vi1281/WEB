@@ -1,85 +1,178 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Убедимся, что все элементы не будут выходить за пределы контейнера */
+    box-sizing: border-box; 
 }
 
 body {
     width: 100%;
     height: 100%;
     display: flex;
-     flex-direction: column; /* Позволяет разместить хедер и основной контент друг под другом  */
-     justify-content: flex-start; /*Выравнивание контента по вертикали */
-     color: #565656;
-     background-color: #2b2b2b;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #565656;
+    background-color: #2b2b2b;
+    overflow: auto;
+    position: relative; 
+    margin: 0; 
+    
 }
 
-/* Хедер */
 header {
     position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
     background-color: rgb(28, 28, 28);
     width: 100%;
-    height: 100px;
+    height: 13vh;
     color: white;
-
+    
 }
+/* Блоки */
+.profile, .Contact, .Inp, .Session, .Atest, .FlowControl {
+    width: 1000px;
+    position: absolute;
+    left: 20vw;
+    margin-top: 5vh; 
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;  
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+.profile, .Contact, .Inp, .Session, .Atest, .FlowControl  h1{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+
+    
+}
+/* Кнопка входу */
+.auth-container {
+    margin: 2vw;
+    position: relative;
+    display: inline-block;
+}
+
+.authBtn {
+    background-color: #28a745; 
+    color: #f3f4f8; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.authBtn:hover {
+    background-color: #218838;
+}
+.auth {
+   position: absolute;
+   top: 20vh;
+   right: 50vw;
+   transform: translateX(50%); 
+   background-color: rgb(170, 170, 170);
+   border: none;
+   
+   width: 30vw;
+   height: 50vh;
+   
+   border-radius: 30px;
+
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.auth h1{
+    margin-left: 55%;
+    transform: translateX(-50%); 
+}
+.auth form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth label {
+    margin-left: 50%;
+    font-size: 14px;
+    color: #333;
+}
+
+.auth input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.auth button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.auth button:hover {
+    background-color: #218838;
+}
+/* Лого */
 .Logo {
     font-family: "Agu Display", serif;
     font-size: 170%;
     color: #28a745;
-    position: absolute; /* Позиционируем логотип относительно хедера */
-    left: 50%; /* Отступ слева на 50% от ширины хедера */
-    transform: translateX(-50%); /* Смещаем логотип на половину его ширины, чтобы точно выровнять по центру */
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
 
 }
 /* Меню */
 .menu-container {
-    margin: 20px;
+    margin: 2vw;
     position: relative; 
     display: inline-block;
 }
 
 .menu-button {
     background-color: #28a745; 
-    color: #333; 
+    color: #f3f4f8; 
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s;
+    
 }
 
 .menu-button:hover {
     background-color: #218838; 
 }
 
-/* Меню: тепер закріплене в лівому верхньому куті */
 .menu-container {
-    position: fixed; /* Використовуємо fixed для фіксації меню */
-    top: 20px; /* Відстань від верхнього краю */
-    left: 20px; /* Відстань від лівого краю */
-    z-index: 1000; /* Вищий пріоритет, щоб меню було поверх інших елементів */
+    position: sticky;
+    top: 20px; 
+    left: 20px; 
+    z-index: 1000; 
 }
 
 .menu-dropdown {
     position: absolute;
-    top: 65px; 
+    top: 75px; 
     left: 0;
-    background-color: white; /* Білий фон з прозорістю */
+    background-color: white; 
     backdrop-filter: blur(1.5px);
     border: 1px solid white; 
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(146, 146, 146, 0.714);
     width: 200px; 
-    height: 50vh;
+    height: 45vh;
     color: #28a745;
 }
-
-
 
 .menu-list {
     list-style: none;
@@ -88,16 +181,17 @@ header {
 }
 
 .menu-item {
-    display: block;  /* Делаем элементы блочными */
-    width: 100%;     /* Занимают всю доступную ширину */ 
-
+    display: block;  
+    width: 100%;     
     padding: 10px 20px;
-
     font-size: 18px;
     cursor: pointer;
     font-family: "EB Garamond", serif;
     font-style: normal;
-}
+    /* background-color: white;  */
+    
+} 
+
 .menu-dropdown .menu-item a {
     color: #28a745 !important; 
     text-decoration: none;
@@ -105,27 +199,29 @@ header {
     width: 100%;   
     
 }
+
 .menu-item:hover {
-    background-color: #4b4b4b; 
+    background-color: #c8c8c8; 
 }
-/* Профиль */
-.profile {
-    display: inline-block;
-    display: flex;
-    position: relative; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Чтобы контент не был по центру, а начинался сверху */
-    width: 50vw;
-    margin-top: 75%;
-    margin-left: 100%;
-    transform: translateX(-50%);
-    
+
+.logout-button {
+    background-color: #28a745; 
+    color: #f3f4f8; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Анімація для hover */
+    margin-top: 20px;
 }
-/* Разделы профиля */
-.profileP,
-.profileN,
-.profileC {
+
+.logout-button:hover {
+    background-color: #218838; /* Темніший червоний для hover */
+}
+
+
+.profileP, .profileN, .profileC {
     width: 100%;
     background-color: white;
     margin-bottom: 20px;
@@ -135,9 +231,7 @@ header {
     color: #333;
 }
 
-.profileP h1,
-.profileN h1,
-.profileC h1 {
+.profileP h1, .profileN h1, .profileC h1 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
@@ -148,6 +242,97 @@ header {
     color: #555;
 }
 
+.Contact h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    background-color: #b7a4a4;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #333;
+}
 
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+li strong {
+    font-weight: bold;
+    color: #333;
+}
+
+
+li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+li:nth-child(odd) {
+    background-color: #ececec;
+}
+
+
+.Inp h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+th {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+
+td {
+    padding: 10px;
+    text-align: left;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ececec;
+}
+
+
+th, td {
+    border-radius: 5px;
+}
 

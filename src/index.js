@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; 
-import Header from "./Header"
+import Header from "./pages/Header"
 import './styles/style.css'
 
 
 const elements = (
-  <Header />
+  <div className='main-container'> <Header /></div>
+ 
 );
 
 const app = document.getElementById('campus');

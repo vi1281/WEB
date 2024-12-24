@@ -1,19 +1,24 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// firebase.js
+import { initializeApp } from 'firebase/app';  // Новый импорт для инициализации
+import { getFirestore } from 'firebase/firestore'; // Импортируем Firestore
+import { getAuth } from 'firebase/auth'; // Импортируем Authentication
 
-// Your web app's Firebase configuration
-const API_KEY = import.meta.env.VITE_API_KEY;
-
+// Ваши Firebase-конфигурации
 const firebaseConfig = {
-  apiKey: API_KEY,
-  authDomain: "campus-a9453.firebaseapp.com",
-  projectId: "campus-a9453",
-  storageBucket: "campus-a9453.firebasestorage.app",
-  messagingSenderId: "6355339265",
-  appId: "1:6355339265:web:767ccfe2fcfa0fc7c71800"
-};
+    apiKey: "AIzaSyDRhYwxR2O1zeQFZQf_A70Jf4zNESlBfPc",
+    authDomain: "dbase-a9d5a.firebaseapp.com",
+    projectId: "dbase-a9d5a",
+    storageBucket: "dbase-a9d5a.firebasestorage.app",
+    messagingSenderId: "16367447538",
+    appId: "1:16367447538:web:0eb42e275dbb4d2860cf6b"
+  };
 
-// Initialize Firebase
+// Инициализация Firebase
 const app = initializeApp(firebaseConfig);
+
+// Инициализация Firestore и Authentication
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+
+export { db, auth };
